@@ -18,10 +18,10 @@ elimination algorithm followed by back substitution.
 - For normalization, of row i, the element [i, i] is taken as pivot and
   every element of the row is divided by it.
 
-- The elimination takes place for every row, say j, after i. The first
-  element of the jth row is taken as the scaling factor and the new elements
-  of the jth row are computed using the following formula: [i', j] = [i', j]
-  \- scale * [i, j], where i' is from i+1 to n-1.
+- The elimination takes place for every row, say i', after i. The i' th
+  element of the i' th row is taken as the scaling factor and the new elements
+  of the i' th row are computed using the following formula: [i', j] = [i', j]
+  \- scale * [i, j], where j is from i+1 to n-1.
 
 - After completing the above process we are left with an upper triangular
   matrix. The solution for the equations is obtained after applying back
